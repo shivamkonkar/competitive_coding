@@ -1,0 +1,16 @@
+class Solution {
+    public int searchInsert(int[] nums, int target) {
+        int i= 0 ;
+        for( i =0 ; i < nums.length;i++){
+            if(nums[i]>=target){
+                return i ;
+            }
+               
+        }
+        if(target>nums[i-1]){
+            return i ;
+        }
+        
+        return -1;
+    }
+}
